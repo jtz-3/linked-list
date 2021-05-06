@@ -1,3 +1,6 @@
+'''Note: in all time complexities, n indicates the number
+   of items in the linked list.'''
+
 class Node:
 	def __init__(self, data):
 		self.data = data
