@@ -138,29 +138,3 @@ class LinkedList:
 			previous_node = node
 
 		raise Exception("Node with data '%s' is not found" % target_node_data)
-
-llist = LinkedList()
-print(repr(llist))
-
-llist.add_first(Node("a"))
-llist.add_last(Node("z"))
-print(repr(llist))
-print("Head is: " + llist.head.data)
-print("Tail is: " + llist.tail.data)
-
-llist.add_after("z", Node("b"))
-print(repr(llist))
-print("Tail is: " + llist.tail.data)
-
-llist.add_before("z", Node(1))
-print(repr(llist))
-print("Head is: " + llist.head.data)
-
-llist.remove_node("a")
-print("Head is: " + str(llist.head.data))
-print(repr(llist))
-
-llist.remove_node("b")
-print("Tail is: " + str(llist.tail.data))
-print(repr(llist))
-
